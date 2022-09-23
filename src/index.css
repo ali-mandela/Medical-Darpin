@@ -7,7 +7,239 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* elments */
+h6{
+  font-size: 16px;
+  font-weight: 400;
+}
+.mainnavbar{
+  padding: 0 20px;
+  background-color: maroon;
+  color: white; 
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  
+  height: 50px;
+}
+.logo{
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+.navbar ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar ul li{
+  align-items: center;
+  list-style-type: none;
+  padding-right: 50px;
+}
+.login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+/* header */
+.header{
+  padding: 0 20px;
+  position: relative;
+}
+.header form span i{
+  position: absolute;
+  color: gray;
+  top: 47%;
+  left: 30px;
+  font-size: 25px;
+}
+.header h6 span{
+  font-weight: 700;
+}
+.header form input{
+  width:550px;
+  height: 40px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding: 0 50px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.header form button{
+  width:100px;
+  background-color: #43ad99;
+  height: 40px;
+  border: 1px solid gray;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; 
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 400;
+  color: white;
+}
+
+/* headerbody */
+.headerbody{
+  padding: 0 20px;
+}
+.headerbody h2{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+}
+.headerbody h2 p{
+  display: inline-block;
+  font-weight: 600;
+  color: rgb(66, 62, 62);
+  font-size: 18px;
+}
+.headerbody span{
+  display: inline-block;
+  background-color: #37E2D5;
+  padding: 4px 8px;
+  border-radius: 5px;
+  box-shadow: 1 1px 1px black;
+  margin: 0 10px;
+  color: white;
+  font-size: 14px;
+}
+.headerbody p{
+  display: inline-block;
+  color: maroon;
+  font-weight: 600;
+}
+
+/* labr */
+.lbardivmain{
+  position: relative;
+}
+.lbarmain{
+  padding: 20px 20px;
+  width: 200px;
+  z-index: 100;
+  position: absolute;
+}
+.lbarmain div{
+  background-color: white;
+  border: .1px solid black;
+  margin-bottom: 20px;
+
+  box-shadow: 0px 0px 1px black;
+}
+.lbarmain div h1{ 
+  font-size: 16px;
+  background-color: gainsboro;
+  text-align: center;
+  padding:  10px;
+}
+.lbarmain div ul{ 
+
+}
+.lbarmain div ul li{ 
+  list-style: none;
+  font-size: 13px;
+  padding: 6px 0;
+  padding-left: 6px;
+  font-weight: 600;
+}
+.bcolor{
+  background-color: #37E2D5;
+  border-radius: 3px;
+  margin:4px;
+  color: white;
+}
+/* rightmain */
+.rightmain{
+  margin-left: 190px;
+  margin-top: 20px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  /* border-radius: 10px; */
+  /* background-color: #37E2D5; */
+}
+.rightdiv{
+  margin: 0  6px 14px 6px;
+  border: 1px solid black;
+  width: 340px;
+  padding: 4px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  border-bottom: 10px solid maroon;
+}
+.rightdiv img{
+  height:280px;
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.rightdiv h2{
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 0 5px 0;
+}
+.rightdiv h1{
+  font-size: 16px;
+  font-weight: 500;
+  color:maroon;
+  padding-bottom: 14px;
+}
+.rightdiv h1 span{
+  font-size: 16px;
+  font-weight: 500;
+  color:gray;
+}
+.rightdiv h4{
+  font-size: 12px;
+  font-weight: 500;
+  color:gray;
+  padding-bottom: 10px;
+}
+.rightdiv h3{
+  font-size: 16px;
+  font-weight: 500;
+  color:black;
+}
+/*  */
+.rightbtm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #43ad99;
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 1px solid #000;
+  margin: 10px 0;
+  
+}
+.rightbtm h1{ 
+  color: #43ad99;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+.rightbtm i{ 
+  color: #43ad99;
+  
+  font-size: 26px;
+  font-weight: 600;
+  display: inline-block;
 }
